@@ -39,6 +39,9 @@
 		B0FC22502C11CF6800A61A0A /* CircularProgressView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC224F2C11CF6800A61A0A /* CircularProgressView1.swift */; };
 		B0FC22522C11CFA100A61A0A /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC22512C11CFA100A61A0A /* MeditationViewController.swift */; };
 		B0FC22542C11CFC300A61A0A /* MeditationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC22532C11CFC300A61A0A /* MeditationSession.swift */; };
+		B0FC22572C11DBE100A61A0A /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FC22562C11DBE100A61A0A /* HomeScreen.storyboard */; };
+		B0FC22592C11DCC300A61A0A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC22582C11DCC300A61A0A /* OnboardingViewController.swift */; };
+		B0FC225B2C11DCF000A61A0A /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC225A2C11DCF000A61A0A /* OnboardingContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		B0FC224F2C11CF6800A61A0A /* CircularProgressView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView1.swift; sourceTree = "<group>"; };
 		B0FC22512C11CFA100A61A0A /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
 		B0FC22532C11CFC300A61A0A /* MeditationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationSession.swift; sourceTree = "<group>"; };
+		B0FC22562C11DBE100A61A0A /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
+		B0FC22582C11DCC300A61A0A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		B0FC225A2C11DCF000A61A0A /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +143,9 @@
 			children = (
 				05D3B0162C0D91C6003E1ADE /* AppDelegate.swift */,
 				05D3B0182C0D91C6003E1ADE /* SceneDelegate.swift */,
-				05D3B03E2C0D9CF6003E1ADE /* Suggested.xib */,
 				05D3B01C2C0D91C6003E1ADE /* Main.storyboard */,
+				B0FC22562C11DBE100A61A0A /* HomeScreen.storyboard */,
+				05D3B03E2C0D9CF6003E1ADE /* Suggested.xib */,
 				0550BAA12C0DC56500D16026 /* Meditation.storyboard */,
 				05D3B0442C0D9DEE003E1ADE /* Assessment.storyboard */,
 				055833432C0DB81A00C14EE9 /* Planner.storyboard */,
@@ -146,6 +153,7 @@
 				05D3B01F2C0D91C7003E1ADE /* Assets.xcassets */,
 				05D3B0212C0D91C7003E1ADE /* LaunchScreen.storyboard */,
 				05D3B0242C0D91C7003E1ADE /* Info.plist */,
+				B0FC225C2C11DDDC00A61A0A /* Onboarding */,
 				0550BA9F2C0DC51D00D16026 /* Meditation */,
 				05D3B02A2C0D926E003E1ADE /* Home */,
 				05D3B02B2C0D9277003E1ADE /* Assessment */,
@@ -184,6 +192,15 @@
 				05D3B0302C0D99C4003E1ADE /* PlannerViewController.swift */,
 			);
 			path = Planner;
+			sourceTree = "<group>";
+		};
+		B0FC225C2C11DDDC00A61A0A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B0FC22582C11DCC300A61A0A /* OnboardingViewController.swift */,
+				B0FC225A2C11DCF000A61A0A /* OnboardingContentViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +271,7 @@
 				05D3B0202C0D91C7003E1ADE /* Assets.xcassets in Resources */,
 				B072F0472C11CA600027F277 /* Valley Sunset.mp3 in Resources */,
 				05D3B03D2C0D9B31003E1ADE /* MemoryLane.storyboard in Resources */,
+				B0FC22572C11DBE100A61A0A /* HomeScreen.storyboard in Resources */,
 				05D3B01E2C0D91C6003E1ADE /* Main.storyboard in Resources */,
 				05D3B03F2C0D9CF6003E1ADE /* Suggested.xib in Resources */,
 			);
@@ -270,12 +288,14 @@
 				0558334D2C0DB8CE00C14EE9 /* EventsListViewController.swift in Sources */,
 				B0FC22502C11CF6800A61A0A /* CircularProgressView1.swift in Sources */,
 				055833472C0DB85300C14EE9 /* EventManager.swift in Sources */,
+				B0FC22592C11DCC300A61A0A /* OnboardingViewController.swift in Sources */,
 				05D3B01B2C0D91C6003E1ADE /* ViewController.swift in Sources */,
 				05D3B0432C0D9D9C003E1ADE /* HomeDataModel.swift in Sources */,
 				B0FC22522C11CFA100A61A0A /* MeditationViewController.swift in Sources */,
 				B072F03D2C11C1970027F277 /* ResultViewController.swift in Sources */,
 				05CE64EE2C0DD0E900DBE0DF /* SampleDataModel.swift in Sources */,
 				05CE64F22C0DD15D00DBE0DF /* SampleViewController.swift in Sources */,
+				B0FC225B2C11DCF000A61A0A /* OnboardingContentViewController.swift in Sources */,
 				05D3B0312C0D99C4003E1ADE /* PlannerViewController.swift in Sources */,
 				05D3B0172C0D91C6003E1ADE /* AppDelegate.swift in Sources */,
 				B072F03F2C11C1CD0027F277 /* CircularProgressView.swift in Sources */,
