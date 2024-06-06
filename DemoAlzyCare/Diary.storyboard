@@ -43,16 +43,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Diary" id="v5e-bo-jdQ">
-                        <barButtonItem key="leftBarButtonItem" title="Edit" id="Fcf-Gq-mnd">
-                            <connections>
-                                <action selector="didTapEdit" destination="xNd-0D-UAF" id="0hF-ow-wzr"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="New Note" id="hhu-b3-As8">
-                            <connections>
-                                <action selector="didTapNewNote" destination="xNd-0D-UAF" id="n51-yU-3Yf"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="New Note" id="hhu-b3-As8">
+                                <connections>
+                                    <action selector="didTapNewNote" destination="xNd-0D-UAF" id="n51-yU-3Yf"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Edit" id="Fcf-Gq-mnd">
+                                <connections>
+                                    <action selector="didTapEdit" destination="xNd-0D-UAF" id="0hF-ow-wzr"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -153,8 +155,10 @@
         <!--Navigation Controller-->
         <scene sceneID="jHl-M7-uKP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zi5-za-5AO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JYh-ZX-Iqb" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="phf-rv-z1S"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W9Q-KQ-pM3">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -164,9 +168,8 @@
                         <segue destination="xNd-0D-UAF" kind="relationship" relationship="rootViewController" id="IrR-XS-tca"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zi5-za-5AO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1910.6870229007632" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="2045" y="-2"/>
         </scene>
     </scenes>
     <resources>
