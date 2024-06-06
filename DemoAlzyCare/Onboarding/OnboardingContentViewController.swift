@@ -49,7 +49,6 @@ class OnboardingContentViewController: UIViewController {
         actionButton.translatesAutoresizingMaskIntoConstraints = false
         actionButton.setTitleColor(.white, for: .normal)
         actionButton.backgroundColor = UIColor(red: 121.0/255.0, green: 87.0/255.0, blue: 169.0/255.0, alpha: 1.0)
-//        actionButton.backgroundColor = UIColor(red: 196.0/255.0, green: 181.0/255.0, blue: 218.0/255.0, alpha: 1.0)
         actionButton.layer.cornerRadius = 8
         actionButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         actionButton.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
@@ -91,9 +90,19 @@ class OnboardingContentViewController: UIViewController {
     }
     
     @objc private func actionButtonTapped() {
+        print("Action button tapped") // Debugging print statement
+        
+        let storyboard = UIStoryboard(name: "HomeScreen", bundle: nil)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController else {
+            print("Error: Unable to instantiate ViewController") // Debugging print statement
+            return
+        }
+        
         if let window = UIApplication.shared.windows.first {
-            window.rootViewController = ViewController()
+            window.rootViewController = viewController
             UIView.transition(with: window, duration: 0.5, options: .transitionFlipFromRight, animations: nil, completion: nil)
+        } else {
+            print("Error: No window available") // Debugging print statement
         }
     }
     
@@ -115,5 +124,3 @@ class OnboardingContentViewController: UIViewController {
         return NSAttributedString(string: text, attributes: attributes)
     }
 }
-
-
