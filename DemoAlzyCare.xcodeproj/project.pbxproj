@@ -46,6 +46,7 @@
 		B0FC226D2C11EC7A00A61A0A /* Diary1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC226C2C11EC7A00A61A0A /* Diary1ViewController.swift */; };
 		B0FC226F2C11ECAE00A61A0A /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC226E2C11ECAE00A61A0A /* EntryViewController.swift */; };
 		B0FC22712C11ECC300A61A0A /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC22702C11ECC300A61A0A /* NoteViewController.swift */; };
+		B0FC22C12C1237A900A61A0A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC22C02C1237A900A61A0A /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		B0FC226C2C11EC7A00A61A0A /* Diary1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary1ViewController.swift; sourceTree = "<group>"; };
 		B0FC226E2C11ECAE00A61A0A /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		B0FC22702C11ECC300A61A0A /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		B0FC22C02C1237A900A61A0A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 		05D3B02A2C0D926E003E1ADE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B0FC22C02C1237A900A61A0A /* ProfileViewController.swift */,
 				05D3B0422C0D9D9C003E1ADE /* HomeDataModel.swift */,
 				05D3B0402C0D9D24003E1ADE /* SuggestedCollectionViewCell.swift */,
 				05D3B01A2C0D91C6003E1ADE /* ViewController.swift */,
@@ -315,6 +318,7 @@
 				05D3B0432C0D9D9C003E1ADE /* HomeDataModel.swift in Sources */,
 				B0FC22522C11CFA100A61A0A /* MeditationViewController.swift in Sources */,
 				B072F03D2C11C1970027F277 /* ResultViewController.swift in Sources */,
+				B0FC22C12C1237A900A61A0A /* ProfileViewController.swift in Sources */,
 				05CE64EE2C0DD0E900DBE0DF /* SampleDataModel.swift in Sources */,
 				05CE64F22C0DD15D00DBE0DF /* SampleViewController.swift in Sources */,
 				B0FC225B2C11DCF000A61A0A /* OnboardingContentViewController.swift in Sources */,

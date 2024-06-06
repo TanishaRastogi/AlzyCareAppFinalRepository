@@ -11,10 +11,16 @@
         <!--Onboarding View Controller-->
         <scene sceneID="3yP-w7-FQ6">
             <objects>
-                <viewController id="Ydt-Ux-jsj" customClass="OnboardingViewController" customModule="OnboardingScreens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ydt-Ux-jsj" customClass="OnboardingViewController" customModule="DemoAlzyCare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cq3-0L-JJt">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wGN-oN-bXf">
+                                <rect key="frame" x="98" y="267" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1yN-FY-H9v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
