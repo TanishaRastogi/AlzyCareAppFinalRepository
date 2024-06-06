@@ -103,13 +103,6 @@
 			path = Meditation;
 			sourceTree = "<group>";
 		};
-		0550BAA02C0DC54100D16026 /* Notes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Notes;
-			sourceTree = "<group>";
-		};
 		055833452C0DB83700C14EE9 /* MemoryLane */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +147,6 @@
 				05D3B0212C0D91C7003E1ADE /* LaunchScreen.storyboard */,
 				05D3B0242C0D91C7003E1ADE /* Info.plist */,
 				0550BA9F2C0DC51D00D16026 /* Meditation */,
-				0550BAA02C0DC54100D16026 /* Notes */,
 				05D3B02A2C0D926E003E1ADE /* Home */,
 				05D3B02B2C0D9277003E1ADE /* Assessment */,
 				05D3B02C2C0D9290003E1ADE /* Planner */,
