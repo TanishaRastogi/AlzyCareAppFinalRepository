@@ -93,13 +93,13 @@ class OnboardingContentViewController: UIViewController {
         print("Action button tapped") // Debugging print statement
         
         let storyboard = UIStoryboard(name: "HomeScreen", bundle: nil)
-        guard let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController else {
-            print("Error: Unable to instantiate ViewController") // Debugging print statement
+        guard let tabBarController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as? UITabBarController else {
+            print("Error: Unable to instantiate MainTabBarController") // Debugging print statement
             return
         }
         
         if let window = UIApplication.shared.windows.first {
-            window.rootViewController = viewController
+            window.rootViewController = tabBarController
             UIView.transition(with: window, duration: 0.5, options: .transitionFlipFromRight, animations: nil, completion: nil)
         } else {
             print("Error: No window available") // Debugging print statement
