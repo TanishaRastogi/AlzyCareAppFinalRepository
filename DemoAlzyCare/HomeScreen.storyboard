@@ -316,10 +316,10 @@
             </objects>
             <point key="canvasLocation" x="2918.320610687023" y="-2.1126760563380285"/>
         </scene>
-        <!--MemoryLane-->
+        <!--Planner-->
         <scene sceneID="y9y-85-v3P">
             <objects>
-                <viewControllerPlaceholder storyboardName="MemoryLane" id="Tsv-y0-3aY" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Planner" id="Tsv-y0-3aY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Planner" image="calendar" catalog="system" selectedImage="calendar" id="60L-mL-LET"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0OM-5k-oye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
